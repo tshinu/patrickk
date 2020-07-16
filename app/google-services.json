@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "434633574150",
+    "firebase_url": "https://taxi-jaune-burki-1570095513192.firebaseio.com",
+    "project_id": "taxi-jaune-burki-1570095513192",
+    "storage_bucket": "taxi-jaune-burki-1570095513192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434633574150:android:354d7d10b524e8443b0087",
+        "android_client_info": {
+          "package_name": "com.heven.taxicabondemandtaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434633574150-76bsa46iv0m9qch5cn6m2mj7aet1hj3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heven.taxicabondemandtaxi",
+            "certificate_hash": "ab2f94097d801733e6382e4e77a990b2387a01f8"
+          }
+        },
+        {
+          "client_id": "434633574150-n9vaig1ris4lohcuo5fpes04ev3ovpcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGyqkSKGMEjL5cUzd3z6oyKGrPOiSNkdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434633574150-n9vaig1ris4lohcuo5fpes04ev3ovpcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434633574150:android:604709ab52b4dce93b0087",
+        "android_client_info": {
+          "package_name": "com.projets.heven.taxijaune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434633574150-n9vaig1ris4lohcuo5fpes04ev3ovpcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGyqkSKGMEjL5cUzd3z6oyKGrPOiSNkdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434633574150-n9vaig1ris4lohcuo5fpes04ev3ovpcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
