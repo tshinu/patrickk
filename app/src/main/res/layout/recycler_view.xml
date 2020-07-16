@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.heven.taxicabondemandtaxi.circleimage.CircleImageView
+                android:layout_alignParentLeft="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                android:id="@+id/user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/user_profile"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/balance"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textSize="30sp"
+                android:textColor="@color/colorLogoBlack"
+                android:gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_margin="0dp"
+            android:id="@+id/drawer_conducteur"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginRight="65dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorLogoBlack"
+                    android:gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_status" />
+
+                <TextView
+                    android:layout_marginLeft="0dp"
+                    android:textSize="12sp"
+                    android:text="actif"
+                    android:id="@+id/statut_conducteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:padding="10dp"
+                android:id="@+id/switch_statut"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/drawer_user"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_marginLeft="0dp"
+                    android:id="@+id/user_name"
+                    android:layout_marginBottom="0dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorLogoBlack"
+                    android:gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jhon Doe" />
+
+                <TextView
+                    android:textColor="@color/colorLogoBlack"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="12sp"
+                    android:text="+2260 70 00 00 00"
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="0dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvdrawer"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>
